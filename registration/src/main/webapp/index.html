@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="Register" method="post">
+<table>
+<tr>
+<td>User Name</td>
+<td><input type="text" name="uname"></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required name="password"></td>
+</tr>
+<tr>
+<td>Email</td>
+<td><input type="email"
+    pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+    required name="email"
+></td>
+</tr>
+<tr>
+<td>Phone</td>
+<td><input type="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  name="phone"></td>
+</tr>
+<tr>
+<td>Submit</td>
+<td><input type="submit" value="register"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
